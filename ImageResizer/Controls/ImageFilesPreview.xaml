@@ -24,7 +24,7 @@
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
         </ListBox>
-        <StatusBar Grid.Row="1" Background="#FF878787">
+        <StatusBar Grid.Row="1" Background="#FF3E3E3E">
             <StatusBarItem Width="128" Height="128" Margin="5" Background="#FF8F8F8F">
                 <Image x:Name="m_StatusBar_PreviewImage" />
             </StatusBarItem>

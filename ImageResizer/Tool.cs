@@ -27,6 +27,8 @@ namespace ImageResizer
             }
         }
 
+        private BuildT3DB _buildTool;
+
         /// <summary>
         /// Private constructor
         /// </summary>
@@ -63,16 +65,22 @@ namespace ImageResizer
                 return;
             }
 
-            new ResizeTool(castedDirInfo).ShowDialog();
+            new ResizeTool(castedDirInfo).Show();
         }
 
         /// <summary>
         /// On click dbbuild tool
         /// </summary>
-        /// <param name="e"></param>
         public void DBBuild(object e)
         {
-            new BuildT3DB().ShowDialog();
+            // Prevent multiple build tool instances
+            if (_buildTool != null)
+            {
+                _buildTool.Close();
+            }
+
+            _buildTool = new BuildT3DB();
+            _buildTool.Show();
         }
     }
 }
