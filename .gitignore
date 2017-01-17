@@ -1,0 +1,10 @@
+.vs/
+*.sln
+ImageResizer/obj/Debug/
+ImageResizer/bin/
+ImageResizer/obj/Release/
+*.pfx
+*.csproj
+*.user
+*.config
+*.suo
