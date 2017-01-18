@@ -1,10 +1,6 @@
 ﻿using ImageResizer.Controls.Tools;
 using ImageResizer.Core;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Windows;
 
 namespace ImageResizer
 {
@@ -54,7 +50,6 @@ namespace ImageResizer
         /// <summary>
         /// On click resize tool
         /// </summary>
-        /// <param name="dirInfo">Should be boxed DirectoryInfo</param>
         public void Resize(object dirInfo)
         {
             DirectoryInfo castedDirInfo = (DirectoryInfo) dirInfo;

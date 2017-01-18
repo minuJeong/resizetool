@@ -1,5 +1,4 @@
 ﻿using ImageResizer.Core;
-using System.Collections;
 using System.IO;
 using System.Linq;
 using System.Windows;

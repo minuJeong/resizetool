@@ -22,7 +22,7 @@ namespace ImageResizer.Controls
     /// 
     /// Purpose
     ///   This class is intended to be treated as preview purpose only.
-    ///   Don't store or use any data from this class.
+    ///   Don't use any data stored in instance of this class.
     /// </summary>
     public partial class ImageFilesPreview : UserControl
     {
@@ -139,8 +139,7 @@ namespace ImageResizer.Controls
             m_SelectedItem.BrowseInExplorer();
         }
     }
-
-
+    
     /// <summary>
     /// Represent File Item in file preview
     /// </summary>
@@ -191,7 +190,7 @@ namespace ImageResizer.Controls
         public Image m_IconRendered;
 
         /// <summary>
-        /// [TODO] Use Design Template
+        /// [TODO] Use Designer designed template
         /// ctor
         /// </summary>
         internal FileItem(FileInfo fileInfo)

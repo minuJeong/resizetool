@@ -4,8 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImageResizer.Controls"
-        mc:Ignorable="d" MinHeight="210" MinWidth="200"
-        Title="BuildT3DB" Height="210" Width="200" Background="#FF616161">
+        mc:Ignorable="d"
+        MinHeight="200" MinWidth="200" MaxWidth="350"
+        Title="BuildT3DB" Height="200" Width="300" Background="#FF292929">
     <Grid Margin="5">
         <Grid.RowDefinitions>
             <RowDefinition Height="4*"/>
@@ -19,9 +20,9 @@
                    Grid.Row="0" Foreground="White"><Run FontWeight="Bold" Text="["/><Run FontWeight="Bold" Text="How to use"/><Run FontWeight="Bold" Text="]"/><LineBreak/><Run FontWeight="Bold"/><LineBreak/><Run Text="P4 workspace를 Dev로 설정하고 버튼을 클릭해주세요."/></TextBlock>
         <Button Content="Build T3DB" Click="OnBuildButton_Click"
                 Margin="5"
-                Grid.Row="1" Background="#FF472B2B" BorderBrush="{x:Null}" Foreground="White"/>
+                Grid.Row="1" Background="#FF472B2B" BorderBrush="{x:Null}" Foreground="#FFFFE9CA"/>
         <Button Content="Exit" Click="OnExitButton_Click"
                 Margin="5"
-                Grid.Row="2" Background="#FF2C2A2A" Foreground="#FFD8D8D8" BorderBrush="{x:Null}"/>
+                Grid.Row="2" Background="#FF5B5B5B" Foreground="#FFD8D8D8" BorderBrush="{x:Null}"/>
     </Grid>
 </Window>
